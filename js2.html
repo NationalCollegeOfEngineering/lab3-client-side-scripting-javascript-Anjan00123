@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body" style="background-color: red">
+    <div>my div1</div>
+    Name: <input type="text" id="name" >
+    <!-- <button onclick="alert('Hi '+ document.getElementById('name').value)">
+    cilck to say</button> -->
+    <button onclick="sayhi()"> say to click</button> 
+    <button onclick="changecolor()">change color to yellow</button>
+    <div> my div</div>
+     <script>
+        function sayhi(){
+            alert("Hi "+ document.getElementById('name').value);
+        }
+        function changecolor(){
+            // document.getElementById("body").style.backgroundColor="yellow";
+            document.body.style.backgroundColor="yellow";
+            // document.getElementsByTagName("body")[0].style.backgroundColor="yellow";
+            document.getElementsByTagName("div")[0].style.backgroundColor="brown";
+        }
+    </script>
+    
+</body>
+</html>
+
